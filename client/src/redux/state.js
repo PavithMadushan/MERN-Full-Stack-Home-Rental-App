@@ -17,6 +17,10 @@ export const userSlice=createSlice({
         setLogout:(state)=>{
             state.user=null
             state.token=null
+        },
+
+        setListings:(state,action)=>{
+            state.listings=action.payload.listings
         }
     }
 })
